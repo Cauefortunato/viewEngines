@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+
+    <style>
+        body{
+            font-family: Arial;
+            background:#f4f4f4;
+            text-align:center;
+        }
+
+        h1{
+            color:#333;
+        }
+
+        a{
+            text-decoration:none;
+            color:inherit;
+        }
+
+        .card{
+            background:white;
+            width:250px;
+            margin:20px auto;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:scale(1.05);
+            cursor:pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1><%= title %></h1>
+<p>Bolas: <strong>Bolas</strong></p>
+
+<a href="bolas/bolafutebol">
+    <div class="card">
+        <h2>⚽ Bola de Futebol</h2>
+        <p>Utilizada no esporte mais popular do mundo.</p>
+    </div>
+</a>
+
+<a href="/bolas/bolabasquete">
+    <div class="card">
+        <h2>🏀 Bola de Basquete</h2>
+        <p>Usada em jogos de basquete com cesta.</p>
+    </div>
+</a>
+
+</body>
+</html>

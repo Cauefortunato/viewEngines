@@ -1,7 +1,7 @@
 <style>
     body{
         font-family: Arial, Helvetica, sans-serif;
-        background: linear-gradient(135deg, #ffecd2, #fcb69f);
+        background: linear-gradient(135deg, #d4fcff, #a1c4fd);
         margin: 0;
         padding: 0;
     }
@@ -17,7 +17,7 @@
     }
 
     h1{
-        color: #ff6b6b;
+        color: #3a7bd5;
         margin-bottom: 10px;
     }
 
@@ -37,8 +37,13 @@
         margin-top: 20px;
     }
 
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+
     li{
-        background: #fff3cd;
+        background: #e6f2ff;
         margin: 10px 0;
         padding: 12px;
         border-radius: 10px;
@@ -47,40 +52,25 @@
     }
 
     li:hover{
-        background: #ffe8a1;
+        background: #cfe5ff;
         transform: scale(1.03);
-    }
-
-    .botao{
-        display:inline-block;
-        margin-top:25px;
-        padding:12px 20px;
-        background:#4CAF50;
-        color:white;
-        text-decoration:none;
-        border-radius:8px;
-        font-size:16px;
-        transition:0.3s;
-    }
-
-    .botao:hover{
-        background:#3e8e41;
+        cursor: pointer;
     }
 </style>
 
 <div class="container">
     <h1>{{title}}</h1>
-    <p>Bem-vindo à página de <strong>{{title}}</strong> 🍽️</p>
+    <p>Bem-vindo à página de <strong>{{title}}</strong> 🥤</p>
 
-    <h2>🍔 Lista de Comidas</h2>
+    <h2>🥤 Lista de Bebidas</h2>
 
     <ul>
-        <li>🍕 Pizza</li>
-        <li>🍔 Hambúrguer</li>
-        <li>🍟 Batata Frita</li>
-        <li>🌮 Taco</li>
-        <li>🍣 Sushi</li>
-    </ul>
+        <a href="/bebidas/refrigerante">
+            <li>🥤 Refrigerante</li>
+        </a>
 
-    <a href="/bebidas" class="botao">Ir para página de Bebidas 🥤</a>
+        <a href="/bebidas/agua">
+            <li>💧 Água</li>
+        </a>
+    </ul>
 </div>
