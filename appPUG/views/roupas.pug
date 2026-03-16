@@ -1,0 +1,64 @@
+doctype html
+html
+  head
+    title #{title}
+    style.
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #d4fc79, #96e6a1);
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 60px auto;
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        text-align: center;
+      }
+
+      h1 {
+        color: #2d6a4f;
+      }
+
+      p {
+        color: #555;
+        font-size: 18px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+      }
+
+      li {
+        background: #e9f5ec;
+        margin: 10px 0;
+        padding: 12px;
+        border-radius: 10px;
+        font-size: 18px;
+        transition: 0.3s;
+      }
+
+      li:hover {
+        background: #d8f3dc;
+        transform: scale(1.03);
+      }
+
+  body
+    .container
+      h1= title
+      p Bem-vindo à página de #{title} 👕
+
+      h2 👗 Lista de Roupas
+
+      ul
+        li 👕 Camiseta
+        li 👖 Calça Jeans
+        li 🧥 Jaqueta
+        li 👗 Vestido
+        li 🩳 Shorts
