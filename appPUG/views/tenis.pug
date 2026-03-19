@@ -1,0 +1,71 @@
+doctype html
+html
+  head
+    title #{title}
+    style.
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #ffecd2, #fcb69f);
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 60px auto;
+        background: white;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        text-align: center;
+      }
+
+      h1 {
+        color: #e76f51;
+      }
+
+      p {
+        color: #555;
+        font-size: 18px;
+      }
+
+      h2 {
+        margin-top: 25px;
+        color: #f4a261;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+      }
+
+      li {
+        background: #fff3e6;
+        margin: 12px 0;
+        padding: 15px;
+        border-radius: 12px;
+        font-size: 18px;
+        transition: 0.3s;
+        cursor: pointer;
+      }
+
+      li:hover {
+        background: #ffe0cc;
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+      }
+
+  body
+    .container
+      h1= title
+      p Bem-vindo à página de #{title} 👟
+
+      h2 👟 Tipos de Tênis
+
+      ul
+        li 🏃‍♂️ Tênis Esportivo
+        li 🏀 Tênis de Basquete
+        li 🛹 Tênis Casual (Streetwear)
+        li 🏋️ Tênis de Academia
+        li 🏞️ Tênis de Trilha

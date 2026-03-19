@@ -1,0 +1,71 @@
+doctype html
+html
+  head
+    title #{title}
+    style.
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #fddb92, #d1fdff);
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 60px auto;
+        background: white;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        text-align: center;
+      }
+
+      h1 {
+        color: #2a9d8f;
+      }
+
+      p {
+        color: #555;
+        font-size: 18px;
+      }
+
+      h2 {
+        margin-top: 25px;
+        color: #e9c46a;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+      }
+
+      li {
+        background: #f1faee;
+        margin: 12px 0;
+        padding: 15px;
+        border-radius: 12px;
+        font-size: 18px;
+        transition: 0.3s;
+        cursor: pointer;
+      }
+
+      li:hover {
+        background: #e0fbfc;
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+      }
+
+  body
+    .container
+      h1= title
+      p Bem-vindo à página de #{title} 👡
+
+      h2 👡 Tipos de Sandálias
+
+      ul
+        li 🌴 Sandália Rasteira
+        li 👠 Sandália de Salto
+        li 🏖️ Sandália de Praia
+        li 🏞️ Sandália Papete
+        li 💎 Sandália Casual

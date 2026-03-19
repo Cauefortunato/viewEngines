@@ -1,0 +1,76 @@
+doctype html
+html
+  head
+    title #{title}
+    style.
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #89f7fe, #66a6ff);
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 60px auto;
+        background: white;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        text-align: center;
+      }
+
+      h1 {
+        color: #1d3557;
+        margin-bottom: 10px;
+      }
+
+      p {
+        color: #555;
+        font-size: 18px;
+      }
+
+      h2 {
+        margin-top: 30px;
+        color: #457b9d;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+      }
+
+      li {
+        margin: 12px 0;
+      }
+
+      a {
+        display: block;
+        text-decoration: none;
+        background: #edf6ff;
+        padding: 15px;
+        border-radius: 12px;
+        font-size: 18px;
+        color: #1d3557;
+        transition: 0.3s;
+      }
+
+      a:hover {
+        background: #dbeafe;
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+      }
+
+  body
+    .container
+      h1= title
+      p Bem-vindo à página de #{title} 👟
+
+      h2 👞 Tipos de Sapatos
+
+      ul
+        li
+          a(href="/sapatos/tenis") 👟 Tênis
+        li
+          a(href="/sapatos/sandalhas") 👡 Sandálias
